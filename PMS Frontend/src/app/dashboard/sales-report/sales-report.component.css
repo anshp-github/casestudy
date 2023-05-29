@@ -1,0 +1,43 @@
+div#addEstDetails {
+	padding: 0 30px;
+}
+/* table {
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #ddd;
+  margin-left: 40px;
+} */
+/* .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+} */
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+/* tr {
+  border-bottom: 1px solid #ddd;
+  margin: 10px;
+  background-color:#D6EEEE;
+} */
+tbody tr:nth-child(odd) {
+  background: #202932;
+}
+
+tbody tr:nth-child(even) {
+  background: #2c3844;
+}
+
+.table-active {
+  color: #ffffff;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #777;
+  text-align: center;
+}

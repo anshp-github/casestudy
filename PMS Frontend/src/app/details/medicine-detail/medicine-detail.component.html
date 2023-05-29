@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="container">
+          <a style="font-size: 20px;
+          font-weight: 500;color:black" [routerLink]="['../../dashboard/doctor']" class="previous">&laquo; Back</a>
+        	<div class="row">
+               <div class="col-xs-4 item-photo">
+                    <img style="max-width:50%;" src={{medicineImg}} />
+                </div>
+                <div class="col-xs-5" style="border:0px solid gray margin 50px">
+
+                    <h2>{{medicineName}}</h2>
+
+                    <h6>Expiry Date- {{medicineExpDate|date}}</h6>
+                    <h6>Stock Available- {{medicineStock}}</h6>
+                    <h6>Price- {{medicinePrice}}</h6>
+
+
+                    <!-- <div class="section" style="padding-bottom:20px;">
+                        <h6 class="title-attr"><small>ADD QUANTITY</small></h6>
+                        <div>
+                            <div class="btn-minus" (click)="remove()"><span class="glyphicon glyphicon-minus" >-</span></div>
+                            <input [(ngModel)]="num" />
+                            <div class="btn-plus" (click)="add()"><span class="glyphicon glyphicon-plus" >+</span></div>
+                        </div>
+                    </div> -->
+
+                    <!-- Botones de compra -->
+                    <div class="section" style="padding-bottom:20px;">
+                        <button (click)="addToCart()" class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true" ></span> Add to cart</button>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </body>
+</html>
+

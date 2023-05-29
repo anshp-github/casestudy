@@ -1,0 +1,23 @@
+<div class="bg-img">
+  <div class="container">
+    <div class="topnav">
+      <a [routerLink]="['../../Login']" class="previous">&laquo; Back</a>
+
+      <a [routerLink]="['../medicine']">Medicine</a>
+      <a [routerLink]="['../supplier']">Supplier</a>
+      <a [routerLink]="['../order']">Order</a>
+      <a [routerLink]="['../sales']">Sales Report</a>
+
+
+    </div>
+    <div (click)="logout()">
+      <i style="font-size:24px;margin-right: -27px;margin-top: 16px" class="fa">&#xf08b;</i>
+    </div>
+    <div class="bg-text" style="margin-left: 351px;height: 147px;">
+      <h1>Welcome, Admin!</h1>
+      <p>Medico Pharmacy Management Software with Pharmacy Billing
+
+       </p>
+    </div>
+  </div>
+</div>
